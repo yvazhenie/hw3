@@ -79,7 +79,26 @@ public class Main {
         float firstPlan = sportWh / lossWh1;
         float secondPlan = sportWh / lossWh2;
         float onAverageDays = (secondPlan + firstPlan) / 2;
-
         System.out.println("Если сбрасывать по 250гр то понадобится дней " + firstPlan + " если сбрасывать по 500гр " + secondPlan + " потребуется в серднем дней " + onAverageDays);
+
+        int masha = 67760;
+        int denis = 83690;
+        int kristina = 76230;
+        int curSalaryM = masha * 12;
+        int curSalaryD = denis * 12;
+        int curSalaryK = kristina * 12;
+        float increaseSalaryM = masha * 1.1f;
+        float increaseSalaryD = denis * 1.1f;
+        float increaseSalaryK = kristina * 1.1f;
+        float yearIncreaseSalaryM = increaseSalaryM * 12;
+        float yearIncreaseSalaryD = increaseSalaryD * 12;
+        float yearIncreaseSalaryK = increaseSalaryK * 12;
+        float diffSalaryYearM = yearIncreaseSalaryM - curSalaryM;
+        float diffSalaryYearD = yearIncreaseSalaryD - curSalaryD;
+        float diffSalaryYearK = yearIncreaseSalaryK - curSalaryK;
+        System.out.println("Маша теперь получает " + increaseSalaryM + " рублей. Годовой доход вырос на " + diffSalaryYearM + " рублей.");
+        System.out.println("Денис теперь получает " + increaseSalaryD + " рублей. Годовой доход вырос на " + diffSalaryYearD + " рублей.");
+        System.out.println("Кристина теперь получает " + increaseSalaryK + " рублей. Годовой доход вырос на " + diffSalaryYearK + " рублей.");
+
     }
 }
